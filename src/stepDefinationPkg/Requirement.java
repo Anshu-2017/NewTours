@@ -1,9 +1,8 @@
-package stepDefination;
+package stepDefinationPkg;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.apache.xpath.operations.And;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,7 +24,7 @@ public class Requirement {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
     }
-   @And("^I launch the URL$")
+   @When("^I launch the URL$")
    public void launchUrl() {
         driver.get("http://newtours.demoaut.com/");
     }
@@ -43,7 +42,7 @@ public class Requirement {
 
     }
 
-    @And("^I click (.*) button$")
+    @When("^I click (.*) button$")
     public void clickBtn(String btnName) {
         driver.findElement(By.name(btnName)).click();
     }
@@ -69,13 +68,13 @@ public class Requirement {
     }
 
 
-    @And("^I click on Oneway RadioBtn$")
+    @When("^I click on Oneway RadioBtn$")
     public void clickRadioBtn() {
         driver.findElement(By.xpath("//input[@value='oneway']")).click();
     }
 
 
-    @And("^I select (.*) from the (.*) dropdown$")
+    @When("^I select (.*) from the (.*) dropdown$")
     public void selectToDropdown(String child,String parent) {
         dropDownToClick=driver.findElement(By.name(parent));
         Select dropDown= new Select(dropDownToClick);
@@ -93,7 +92,7 @@ public class Requirement {
 
 
 
-    @And("^I close the browser$")
+    @When("^I close the browser$")
     public void closeBrowser() {
         driver.close();
     }
