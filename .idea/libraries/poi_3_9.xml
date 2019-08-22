@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="poi-3.9">
+    <CLASSES>
+      <root url="jar://C:/Jarfiles/poi-3.9.jar!/" />
+      <root url="jar://C:/Jarfiles/selenium-server-standalone-3.13.0.jar!/" />
+      <root url="file://C:/Jarfiles/cucumber" />
+      <root url="file://C:/Jarfiles/commons-collections4-4.4" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://C:/Jarfiles/commons-collections4-4.4/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://C:/Jarfiles/cucumber" />
+      <root url="file://C:/Jarfiles/commons-collections4-4.4" />
+    </SOURCES>
+    <jarDirectory url="file://C:/Jarfiles/commons-collections4-4.4" recursive="false" />
+    <jarDirectory url="file://C:/Jarfiles/cucumber" recursive="false" />
+    <jarDirectory url="file://C:/Jarfiles/commons-collections4-4.4" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://C:/Jarfiles/cucumber" recursive="false" type="SOURCES" />
+  </library>
+</component>
